@@ -15,8 +15,13 @@
 //     router
 // }).$mount('#app')
 
+/*
+
 
 // 动态配置路由
+
+
+ */
 // const User = { template: '<div> User {{$route.params.id}}</div>'}
 
 // const router = new VueRouter({
@@ -38,7 +43,12 @@
 
 
 
+/*
+
 //嵌套路由
+
+
+ */
 const User = {
     template: '<div class="user"><h2>User {{$route.params.id}}</h2><router-view></router-view></div>'
 }
@@ -62,6 +72,13 @@ const router = new VueRouter({
             children: [
                 {
                     path: '',
+                    //重定向
+                    //redirect: '/b',
+                    //redirect: {name:'foo'},
+                    /*redirect: to => {
+                        //方法接受 目标路由作为参数
+                        //return 重定向的字符串路径或路径对象
+                    },*/
                     component: Home
                 },
                 {
@@ -78,3 +95,5 @@ const router = new VueRouter({
 })
 
 const app = new Vue({router}).$mount('#app')
+
+
