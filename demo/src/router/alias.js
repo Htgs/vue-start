@@ -2,7 +2,7 @@ const Home = { template: '<div><h1>Home</h1><router-view></router-view></div>' }
 const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
 const Baz = { template: '<div>baz</div>' }
-
+ 
 const router = new VueRouter({
   // mode: 'history',  //类h5历史模式，需要配置需要后台服务器配置
   // base: __dirname,  //应用的基本路径

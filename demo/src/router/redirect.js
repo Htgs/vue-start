@@ -4,7 +4,7 @@ const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
 const Baz = { template: '<div>baz</div>' }
 const WithParams = { template: '<div>{{ $route.params.id }}</div>' }
-
+ 
 const router = new VueRouter({
   // mode: 'history',
   // base: __dirname,
